@@ -1,7 +1,14 @@
-import './index.css'
+import './style.css'
 
-export const Button = (props) => {
+export const Button = ({name, isDashboard, setIsDashboard}) => {
     return (
-        <button className="button">{props.name}</button>
+        <button onClick={() => setIsDashboard(!isDashboard)} className="button">{name}</button>
+    )
+}
+
+export const ButtonFiltro = (props) => {
+
+    return (
+        <button className="button_filtro">{props.name}</button>
     )
 }
