@@ -6,9 +6,10 @@ export const Button = ({name, isDashboard, setIsDashboard}) => {
     )
 }
 
-export const ButtonFiltro = (props) => {
+export const ButtonFiltro = ({name}) => {
 
     return (
-        <button className="button_filtro">{props.name}</button>
+        <button className="button_filtro">{name}</button>
     )
 }
+

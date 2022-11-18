@@ -1,5 +1,6 @@
 main {
   background-color: var(--color-grey-400);
+  height: 100vh;
 }
 
 section {
@@ -53,7 +54,7 @@ section {
   .div_itens{
     display: flex;
     flex-direction: inherit;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0px 100px 0px 100px;
     gap: 10px;
   }
@@ -67,6 +68,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 250px;
   }
 
   .sec_dir > h2 {

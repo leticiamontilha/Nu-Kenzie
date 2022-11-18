@@ -14,7 +14,6 @@ export const Home = ({listTransactions, setListTransactions, isDashboard, setIsD
     const [description, setDescription] = useState("")
     const [value, setValue] = useState("")
     const [type, setType] = useState("")
-   
 
     function handleSubmit (event) {
         event.preventDefault();
