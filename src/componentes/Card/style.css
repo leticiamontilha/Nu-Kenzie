@@ -2,7 +2,16 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 600px;
+    height: 382px;
+    overflow-y: auto;
 }
+
+ul > div > h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
 
 li {
     width: 363px;
@@ -22,8 +31,8 @@ li > p {
     border-left: 5px solid green;
 }
 
-.vermelho {
-    border-left: 5px solid red;
+.cinza {
+    border-left: 5px solid grey;
 }
 
 .div_1 > button {

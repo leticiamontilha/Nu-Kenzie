@@ -20,7 +20,6 @@ export const Home = ({listTransactions, setListTransactions, isDashboard, setIsD
         event.preventDefault();
 
         setListTransactions([...listTransactions, {description, value, type}])
-        console.log(listTransactions)
         setDescription("")
         setValue("")
         setType("")
@@ -42,10 +41,10 @@ export const Home = ({listTransactions, setListTransactions, isDashboard, setIsD
                             </div>
                             <Button type="submit" name="Inserir Valor" />
                         </form>
-                    <ValorTotal/>
+                    <ValorTotal listTransactions={listTransactions}/>
                     </section>
                 <section className='sec_filtro_despesas'>
-                        <Filtro />
+                        <Filtro listTransactions={listTransactions} setListTransactions={setListTransactions} />
                         <Card listTransactions={listTransactions} setListTransactions={setListTransactions} />
                 </section>
                 </div>

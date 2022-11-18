@@ -1,7 +1,7 @@
 import "./style.css"
 import { ButtonFiltro } from "../Button"
 
-export const Filtro = () => {
+export const Filtro = ({listTransactions, setListTransactions}) => {
 
     return (
         <div className="div_filtro">
